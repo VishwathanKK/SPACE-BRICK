@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE BRICKS</title>
+    <link rel="stylesheet" href="space.css">
+    <script src="space.js" defer></script>
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home-page">
+        <h1><b>SPACE BRICKS</b></h1>
+        <button id="start-button">Start Game</button>
+    </div>
+
+    <!-- Game Page -->
+    <div id="game-page" style="display:none;">
+        <h1><b>SPACE BRICKS</b></h1>
+        <canvas id="board"></canvas>
+        <div id="controls">
+            <button id="pause-button">Pause</button>
+            <button id="home-button">Home</button>
+        </div>
+        <div id="score-display">Score: <span id="score">0</span></div>
+        <div id="level-display">Level: <span id="level">1</span></div>
+    </div>
+
+    <!-- End Page -->
+    <div id="end-page" style="display:none;">
+        <h1>Game Over</h1>
+        <p>Your final score is: <span id="final-score"></span></p>
+        <p>You reached Level: <span id="final-level"></span></p>
+        <button id="restart-button">Play Again</button>
+        <button id="home-button-end">Home</button>
+    </div>
+</body>
+</html>
